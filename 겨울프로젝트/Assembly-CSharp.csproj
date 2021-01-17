@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Characters\Scripts\Player.cs" />
     <Compile Include="Assets\Characters\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMFeedbacks\Demos\MMFeedbacksDemo\Scripts\DemoBall.cs" />
     <Compile Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMFeedbacks\Demos\MMFeedbacksDemo\Scripts\DemoButton.cs" />
