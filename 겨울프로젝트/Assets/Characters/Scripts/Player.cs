@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    int hp = 100;
-    float jumpPower = 4;
+    public int hp = 100;
+    public float jumpPower = 100;
 
     Animator animator;
     Rigidbody2D rigid;
@@ -53,19 +53,23 @@ public class Player : MonoBehaviour
         Vector2 jumpVelocity = new Vector2(0, jumpPower);
         rigid.AddForce(jumpVelocity, ForceMode2D.Impulse);
 
-        animator.SetBool("Jump", true);
+        //animator.SetBool("Jump", true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Attatch : " + collision.gameObject.tag);
+        inAir = false;
 
-        if(collision.tag == "Ground" && rigid.velocity.y < 0)
+        if (collision.tag == "Ground" && rigid.velocity.y < 0)
         {
             if (inAir)
                 return;
-            isJump = false;
-            animator.SetBool("Jump", false);
+            else
+            {
+                isJump = false;
+                //animator.SetBool("Jump", false);
+            }
         }
     }
 
@@ -75,5 +79,14 @@ public class Player : MonoBehaviour
 
         if (collision.tag == "Ground")
             inAir = true;
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.tag == "Ground" && (isJump||inAir))
+        {
+            isJump = false;
+            inAir = false;
+        }
     }
 }
