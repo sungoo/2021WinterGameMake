@@ -73,6 +73,10 @@
     <Compile Include="Assets\CorgiEngine\ThirdParty\Tilemap\2dExtras\Tiles\Random Tile\Scripts\RandomTile.cs" />
     <Compile Include="Assets\CorgiEngine\ThirdParty\Tilemap\2dExtras\Tiles\Rule Tile\Scripts\RuleTile.cs" />
     <Compile Include="Assets\CorgiEngine\ThirdParty\Tilemap\2dExtras\Tiles\Terrain Tile\Scripts\TerrainTile.cs" />
+    <Compile Include="Assets\Enemy\Scripts\NoteManager.cs" />
+    <Compile Include="Assets\Enemy\Scripts\NoteMovement.cs" />
+    <Compile Include="Assets\Enemy\Scripts\SpawnNote.cs" />
+    <Compile Include="Assets\Musics\Play\Scripts\CenterFrame.cs" />
     <None Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMInterface\Common\Shaders\GreyScale.shader" />
     <None Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMInterface\Common\Shaders\VerticalGradient.shader" />
     <None Include="Assets\CorgiEngine\ThirdParty\MoreMountains\InventoryEngine\readme.txt" />
