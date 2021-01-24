@@ -10,4 +10,12 @@ public class NoteMovement : MonoBehaviour
     {
         transform.localPosition += Vector3.left * noteSpeed * Time.deltaTime;
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
