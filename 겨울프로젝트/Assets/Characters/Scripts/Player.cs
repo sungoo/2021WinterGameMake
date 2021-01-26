@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
 
     Animator animator;
     Rigidbody2D rigid;
+    SpriteRenderer renderer;
 
     bool isJump = false;
     bool isSlide = false;
@@ -22,6 +23,7 @@ public class Player : MonoBehaviour
     {
         animator = gameObject.GetComponentInChildren<Animator>();
         rigid = gameObject.GetComponentInChildren<Rigidbody2D>();
+        renderer = gameObject.GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -33,6 +35,8 @@ public class Player : MonoBehaviour
                 Discharge();
             return;
         }
+
+        Slide();
     }
 
     //game over
@@ -54,6 +58,38 @@ public class Player : MonoBehaviour
         rigid.AddForce(jumpVelocity, ForceMode2D.Impulse);
 
         //animator.SetBool("Jump", true);
+    }
+
+    public void Slide()
+    {
+        if (!isSlide)
+            return;
+        if (inAir)
+        {
+            //공중 공격
+            renderer.flipX = true;
+            StartCoroutine(AnimationBack());
+        }
+        else
+        {
+            //지상 공격
+            renderer.flipY = true;
+        }
+    }
+
+    public void SlidePress()
+    {
+        if (isSlide)
+            return;
+        isSlide = true;
+    }
+
+    public void SlideOut()
+    {
+        isSlide = false;
+
+        renderer.flipX = false;
+        renderer.flipY = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -88,5 +124,13 @@ public class Player : MonoBehaviour
             isJump = false;
             inAir = false;
         }
+    }
+
+    IEnumerator AnimationBack()
+    {
+        yield return new WaitForSeconds(0.5f);
+        renderer.flipX = false;
+        renderer.flipY = false;
+        isSlide = false;
     }
 }
