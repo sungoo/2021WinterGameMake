@@ -76,15 +76,18 @@ public class Player : MonoBehaviour
             renderer.flipY = true;
         }
     }
-
-    public void SlidePress()
+    //단타
+    public void SlideClick()
     {
-        if (isSlide)
-            return;
         isSlide = true;
     }
-
-    public void SlideOut()
+    //롱 노트
+    public void SlideDown()
+    {
+        isSlide = true;
+    }
+    //버튼 땜
+    public void SlideUp()
     {
         isSlide = false;
 

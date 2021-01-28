@@ -7,7 +7,7 @@ public class PlayerManager : MonoBehaviour
     public static PlayerManager instance;
 
     private GameObject player;
-    public float BPM = 100;
+    public int BPM = 100;
     public float floorSpeed = 1;
 
     public int score = 0;
