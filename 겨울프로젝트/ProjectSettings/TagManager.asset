@@ -10,6 +10,10 @@ TagManager:
   - NoMask
   - Enemy
   - Ground
+  - Perfect
+  - Cool
+  - Good
+  - Bad
   layers:
   - Default
   - TransparentFX

@@ -63,7 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Characters\Scripts\Player.cs" />
-    <Compile Include="Assets\Characters\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMFeedbacks\Demos\MMFeedbacksDemo\Scripts\DemoBall.cs" />
     <Compile Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMFeedbacks\Demos\MMFeedbacksDemo\Scripts\DemoButton.cs" />
     <Compile Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMFeedbacks\Demos\MMFeedbacksDemo\Scripts\DemoGhost.cs" />
@@ -76,6 +75,7 @@
     <Compile Include="Assets\Enemy\Scripts\NoteManager.cs" />
     <Compile Include="Assets\Enemy\Scripts\NoteMovement.cs" />
     <Compile Include="Assets\Enemy\Scripts\SpawnNote.cs" />
+    <Compile Include="Assets\GameManager\GameManager.cs" />
     <Compile Include="Assets\Musics\Play\Scripts\CenterFrame.cs" />
     <None Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMInterface\Common\Shaders\GreyScale.shader" />
     <None Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMInterface\Common\Shaders\VerticalGradient.shader" />

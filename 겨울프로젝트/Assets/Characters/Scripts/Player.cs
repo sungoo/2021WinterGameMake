@@ -97,6 +97,8 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Ground Check
+        ////////////////////////////////////////////////////////
         Debug.Log("Attatch : " + collision.gameObject.tag);
         inAir = false;
 
@@ -110,6 +112,10 @@ public class Player : MonoBehaviour
                 //animator.SetBool("Jump", false);
             }
         }
+        ////////////////////////////////////////////////////////
+        
+        //Note Check
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)

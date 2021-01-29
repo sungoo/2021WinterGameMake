@@ -15,13 +15,13 @@ public class NoteManager : MonoBehaviour
     {
         currentTime += Time.deltaTime;
 
-        if(currentTime >= 60d / PlayerManager.instance.BPM)
+        if(currentTime >= 60d / GameManager.instance.BPM)
         {
             int iRan = Random.Range(0,tfNoteApear.Length);
             GameObject t_note = Instantiate(Note,tfNoteApear[iRan].position, Quaternion.identity);
             t_note.transform.SetParent(this.transform);
             // currentTime은 0으로 초기화시키면 안됨 -> 0.000123일 경우도 생김
-            currentTime -= 60d / PlayerManager.instance.BPM;
+            currentTime -= 60d / GameManager.instance.BPM;
         }
     }
 

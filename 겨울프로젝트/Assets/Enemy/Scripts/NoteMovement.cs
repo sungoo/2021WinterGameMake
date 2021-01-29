@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NoteMovement : MonoBehaviour
 {
-    public float noteSpeed = 400;
+    public float noteSpeed = 10;
 
     private void Update()
     {
