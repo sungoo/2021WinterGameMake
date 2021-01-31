@@ -97,9 +97,10 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Attatch : " + collision.gameObject.tag);
+
         //Ground Check
         ////////////////////////////////////////////////////////
-        Debug.Log("Attatch : " + collision.gameObject.tag);
         inAir = false;
 
         if (collision.tag == "Ground" && rigid.velocity.y < 0)
@@ -115,7 +116,22 @@ public class Player : MonoBehaviour
         ////////////////////////////////////////////////////////
         
         //Note Check
-
+        if(collision.tag == "Enemy")
+        {
+            if(Vector3.Distance(collision.transform.position, transform.position) < 0.3f)
+            {
+                Debug.Log("Miss!");
+                StartCoroutine("blinkInRed");
+                Destroy(collision);
+            }
+            else if(isSlide && (Vector3.Distance(collision.transform.position, transform.position) < 0.5f 
+                && Vector3.Distance(collision.transform.position, transform.position) > 0.3f))
+            {
+                Debug.Log("Hit!");
+                StartCoroutine("blinkInBlue");
+                Destroy(collision);
+            }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -141,5 +157,19 @@ public class Player : MonoBehaviour
         renderer.flipX = false;
         renderer.flipY = false;
         isSlide = false;
+    }
+
+    IEnumerator blinkInRed()
+    {
+        renderer.color = new Color32(255, 0, 0, 255);
+        yield return new WaitForSeconds(0.2f);
+        renderer.color = new Color32(255, 255, 255, 255);
+    }
+
+    IEnumerator blinkInBlue()
+    {
+        renderer.color = new Color32(0, 0, 255, 255);
+        yield return new WaitForSeconds(0.2f);
+        renderer.color = new Color32(255, 255, 255, 255);
     }
 }

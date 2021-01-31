@@ -76,6 +76,7 @@
     <Compile Include="Assets\Enemy\Scripts\NoteMovement.cs" />
     <Compile Include="Assets\Enemy\Scripts\SpawnNote.cs" />
     <Compile Include="Assets\GameManager\GameManager.cs" />
+    <Compile Include="Assets\GameManager\NoteCollecter.cs" />
     <Compile Include="Assets\Musics\Play\Scripts\CenterFrame.cs" />
     <None Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMInterface\Common\Shaders\GreyScale.shader" />
     <None Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMInterface\Common\Shaders\VerticalGradient.shader" />

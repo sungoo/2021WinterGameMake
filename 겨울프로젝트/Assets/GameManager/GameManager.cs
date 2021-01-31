@@ -7,6 +7,10 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     private GameObject player;
+    private GameObject camera;
+    private GameObject noteSpawner;
+    private GameObject noteCollecter;
+
     public int BPM = 100;
     public float floorSpeed = 1;
 
@@ -21,6 +25,13 @@ public class GameManager : MonoBehaviour
     public int good = 0;
     public int cool = 0;
     public int perpect = 0;
+
+    //판정별 점수
+    private int score_miss = 0;
+    private int score_bad = 10;
+    private int score_good = 100;
+    private int score_cool = 300;
+    private int score_perpect = 500;
 
     private void Awake()
     {
@@ -44,11 +55,28 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindWithTag("Player");
+        camera = GameObject.FindWithTag("MainCamera");
+        noteSpawner = GameObject.FindWithTag("Spawner");
+        noteCollecter = GameObject.FindWithTag("Collecter");
+
         Invoke("gameStart", 3f);
     }
 
     public void gameStart()
     {
 
+    }
+
+    private void Update()
+    {
+        Move();
+    }
+
+    private void Move()
+    {
+        player.transform.Translate(Vector3.right * floorSpeed * Time.deltaTime);
+        camera.transform.Translate(Vector3.right * floorSpeed * Time.deltaTime);
+        noteSpawner.transform.Translate(Vector3.right * floorSpeed * Time.deltaTime);
+        noteCollecter.transform.Translate(Vector3.right * floorSpeed * Time.deltaTime);
     }
 }
