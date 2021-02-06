@@ -290,7 +290,6 @@
     <Compile Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMTools\Tools\Tilemaps\MMTilemapShadow.cs" />
     <Compile Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMTools\Tools\Time\MMCooldown.cs" />
     <Compile Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMTools\Tools\Time\MMCountdown.cs" />
-    <Compile Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMTools\Tools\Utilities\MMApplicationQuit.cs" />
     <Compile Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMTools\Tools\Utilities\MMDebugController.cs" />
     <Compile Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMTools\Tools\Utilities\MMLayer.cs" />
     <Compile Include="Assets\CorgiEngine\ThirdParty\MoreMountains\MMTools\Tools\Utilities\MMOpenURL.cs" />

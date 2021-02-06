@@ -1,0 +1,869 @@
+fileFormatVersion: 2
+guid: 6d4364b4e09bf2d40af60321aa9d30b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -690027128765580194
+    second: jump2_sprite_0
+  - first:
+      213: -1413261599047772320
+    second: jump2_sprite_1
+  - first:
+      213: 4729580074733063266
+    second: jump2_sprite_2
+  - first:
+      213: 3379894767297626674
+    second: jump2_sprite_3
+  - first:
+      213: 7901922272844500321
+    second: jump2_sprite_4
+  - first:
+      213: 815714258918524536
+    second: jump2_sprite_5
+  - first:
+      213: -2808088102912822419
+    second: jump2_sprite_6
+  - first:
+      213: 2638019361980122394
+    second: jump2_sprite_7
+  - first:
+      213: -1474906154471370664
+    second: jump2_sprite_8
+  - first:
+      213: 5922285827115604146
+    second: jump2_sprite_9
+  - first:
+      213: -2856271593083592116
+    second: jump2_sprite_10
+  - first:
+      213: 2806025659731100021
+    second: jump2_sprite_11
+  - first:
+      213: -5941058683381990369
+    second: jump2_sprite_12
+  - first:
+      213: 5996721026690858130
+    second: jump2_sprite_13
+  - first:
+      213: -2172532146861214275
+    second: jump2_sprite_14
+  - first:
+      213: -3120598897315242249
+    second: jump2_sprite_15
+  - first:
+      213: 7653504264330514421
+    second: jump2_sprite_16
+  - first:
+      213: 4783629193938190587
+    second: jump2_sprite_17
+  - first:
+      213: -2268537861445332826
+    second: jump2_sprite_18
+  - first:
+      213: 5026106350696079732
+    second: jump2_sprite_19
+  - first:
+      213: 8659365142443704692
+    second: jump2_sprite_20
+  - first:
+      213: -1993267910272002629
+    second: jump2_sprite_21
+  - first:
+      213: -4030450395275149893
+    second: jump2_sprite_22
+  - first:
+      213: -644031988742591586
+    second: jump2_sprite_23
+  - first:
+      213: -3553270997353003063
+    second: jump2_sprite_24
+  - first:
+      213: -2413538216473617145
+    second: jump2_sprite_25
+  - first:
+      213: -1871154634958881592
+    second: jump2_sprite_26
+  - first:
+      213: -4338172065196215325
+    second: jump2_sprite_0
+  - first:
+      213: -1673573760944308115
+    second: jump2_sprite_1
+  - first:
+      213: -7543818226937009035
+    second: jump2_sprite_2
+  - first:
+      213: -6422586013001778207
+    second: jump2_sprite_3
+  - first:
+      213: 116811030320813239
+    second: jump2_sprite_4
+  - first:
+      213: -6284706043197278809
+    second: jump2_sprite_5
+  - first:
+      213: 1694270790835792318
+    second: jump2_sprite_6
+  - first:
+      213: -2832885711358356476
+    second: jump2_sprite_7
+  - first:
+      213: -8499197846224736909
+    second: jump2_sprite_8
+  - first:
+      213: 760794318583887570
+    second: jump2_sprite_9
+  - first:
+      213: -3511773666134582824
+    second: jump2_sprite_10
+  - first:
+      213: -552419710316143979
+    second: jump2_sprite_11
+  - first:
+      213: 7020177103111557403
+    second: jump2_sprite_12
+  - first:
+      213: 3263242170494394074
+    second: jump2_sprite_13
+  - first:
+      213: 633835627919453244
+    second: jump2_sprite_14
+  - first:
+      213: 3233310633885309062
+    second: jump2_sprite_15
+  - first:
+      213: 6770898985543779191
+    second: jump2_sprite_16
+  - first:
+      213: -53165681849664287
+    second: jump2_sprite_17
+  - first:
+      213: 758469653515800721
+    second: jump2_sprite_18
+  - first:
+      213: 646621279678786101
+    second: jump2_sprite_19
+  - first:
+      213: -35814141315534804
+    second: jump2_sprite_20
+  - first:
+      213: 9065941563644140298
+    second: jump2_sprite_21
+  - first:
+      213: -884582204183356233
+    second: jump2_sprite_22
+  - first:
+      213: 1218045660615714748
+    second: jump2_sprite_23
+  - first:
+      213: -8155974773834179425
+    second: jump2_sprite_24
+  - first:
+      213: 8249520856980564744
+    second: jump2_sprite_25
+  - first:
+      213: 3793959699084674250
+    second: jump2_sprite_26
+  - first:
+      213: -5403574337004053291
+    second: jump2_sprite_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 370
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jump2_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4950
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e3f477cd77bbc3c0800000000000000
+      internalID: -4338172065196215325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 4950
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d600089088546c8e0800000000000000
+      internalID: -1673573760944308115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 4950
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c6d4d9a49fe4790800000000000000
+      internalID: -7543818226937009035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 4725
+        y: 4950
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebf2abac046ed6a0800000000000000
+      internalID: -6422586013001778207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 4950
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b49e10630ffe9100800000000000000
+      internalID: 116811030320813239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 7875
+        y: 4950
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5b979c62d38c8a0800000000000000
+      internalID: -6284706043197278809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 9450
+        y: 4950
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb96611ce42438710800000000000000
+      internalID: 1694270790835792318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3300
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404943d64719fa8d0800000000000000
+      internalID: -2832885711358356476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 3300
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d620ce698cc0a80800000000000000
+      internalID: -8499197846224736909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 3300
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6f352e662ee8a00800000000000000
+      internalID: 760794318583887570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 4725
+        y: 3300
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d91a72f47ca34fc0800000000000000
+      internalID: -3511773666134582824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 3300
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a9ea743396558f0800000000000000
+      internalID: -552419710316143979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 7875
+        y: 3300
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b119b4b71edac6160800000000000000
+      internalID: 7020177103111557403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 9450
+        y: 3300
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade9464f67d594d20800000000000000
+      internalID: 3263242170494394074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1650
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c20283526dbc800800000000000000
+      internalID: 633835627919453244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 1650
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6881a3504e60fdc20800000000000000
+      internalID: 3233310633885309062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 1650
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773c36be0c017fd50800000000000000
+      internalID: 6770898985543779191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 4725
+        y: 1650
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ecfb13181e134ff0800000000000000
+      internalID: -53165681849664287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 1650
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19019be9120a68a00800000000000000
+      internalID: 758469653515800721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_19
+      rect:
+        serializedVersion: 2
+        x: 7875
+        y: 1650
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a667fb0a249f800800000000000000
+      internalID: 646621279678786101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_20
+      rect:
+        serializedVersion: 2
+        x: 9450
+        y: 1650
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20b3fc6a33c08ff0800000000000000
+      internalID: -35814141315534804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b557791d1b0dd70800000000000000
+      internalID: 9065941563644140298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_22
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 0
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bcd4090c2559b3f0800000000000000
+      internalID: -884582204183356233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_23
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 0
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7a439231e57e010800000000000000
+      internalID: 1218045660615714748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_24
+      rect:
+        serializedVersion: 2
+        x: 4725
+        y: 0
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c1198c72820de80800000000000000
+      internalID: -8155974773834179425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_25
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 0
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ba087f28f2c7270800000000000000
+      internalID: 8249520856980564744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_26
+      rect:
+        serializedVersion: 2
+        x: 7875
+        y: 0
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4071cbe3ad6a430800000000000000
+      internalID: 3793959699084674250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jump2_sprite_27
+      rect:
+        serializedVersion: 2
+        x: 9450
+        y: 0
+        width: 1575
+        height: 1650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dcd47515c5a205b0800000000000000
+      internalID: -5403574337004053291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
