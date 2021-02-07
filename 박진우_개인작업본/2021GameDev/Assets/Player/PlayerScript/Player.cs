@@ -7,12 +7,9 @@ public class Player : MonoBehaviour
     public int hp = 100;
     public float jumpPower = 100;
 
-    public TimingManager theTimingManager;
-    ScoreManager theScoreManager;
-
     Animator animator;
     Rigidbody rigid;
-    public SpriteRenderer renderer;
+    SpriteRenderer renderer;
 
     bool isJump = false;
     bool isSlide = false;
@@ -21,7 +18,8 @@ public class Player : MonoBehaviour
     bool isDischarge = false;
     bool inAir = false;
 
-    bool isCheck = false;
+    GameObject note;
+    int state = 0; //0 : miss, 1 : bad, 2 : good, 3 : cool, 4 : perpect
 
     // Start is called before the first frame update
     void Start()
@@ -29,9 +27,6 @@ public class Player : MonoBehaviour
         animator = gameObject.GetComponentInChildren<Animator>();
         rigid = gameObject.GetComponentInChildren<Rigidbody>();
         renderer = gameObject.GetComponentInChildren<SpriteRenderer>();
-
-        theScoreManager = FindObjectOfType<ScoreManager>();
-        theTimingManager = FindObjectOfType<TimingManager>();
     }
 
     // Update is called once per frame
@@ -60,12 +55,12 @@ public class Player : MonoBehaviour
 
         isJump = true;
 
-        rigid.velocity = Vector3.zero;
+        rigid.velocity = Vector2.zero;
 
         Vector3 jumpVelocity = new Vector3(0, jumpPower, 0);
         rigid.AddForce(jumpVelocity, ForceMode.Impulse);
 
-        //animator.SetBool("Jump", true);
+        animator.SetBool("isJump", true);
     }
 
     public void Slide()
@@ -84,24 +79,30 @@ public class Player : MonoBehaviour
             renderer.flipY = true;
         }
     }
-
-    public void CheckCollider() // 충돌 판정 체크용 함수 (임시)
-    {
-        isCheck = true;
-
-        theTimingManager.CheckTiming();
-    }
-
     //단타
     public void SlideClick()
     {
         isSlide = true;
+
+        if(state == 1)
+        {
+            Debug.Log("Hit!");
+            StartCoroutine("blinkInBlue");
+            Destroy(note.gameObject);
+        }
+        if(state == 0)
+        {
+            Debug.Log("Miss!");
+            StartCoroutine("blinkInRed");
+        }
     }
+    
     //롱 노트
     public void SlideDown()
     {
         isSlide = true;
     }
+
     //버튼 땜
     public void SlideUp()
     {
@@ -113,7 +114,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        // Debug.Log("Attatch : " + collision.gameObject.tag);
+        Debug.Log("Attatch : " + collision.gameObject.tag);
 
         //Ground Check
         ////////////////////////////////////////////////////////
@@ -126,34 +127,20 @@ public class Player : MonoBehaviour
             else
             {
                 isJump = false;
-                //animator.SetBool("Jump", false);
+                animator.SetBool("isJump", false);
             }
         }
         ////////////////////////////////////////////////////////
-        
-        //Note Check
-        if(collision.tag == "Note")
+        ///
+        if(collision.tag == "Enemy")
         {
-            if(Vector3.Distance(collision.transform.position, transform.position) < 0.3f)
-            {
-                // Debug.Log("Miss!");
-                StartCoroutine("blinkInRed");
-                Destroy(collision);
-            }
-            else if(isJump && (Vector3.Distance(collision.transform.position, transform.position) < 0.5f 
-                && Vector3.Distance(collision.transform.position, transform.position) > 0.3f))
-            {
-                // Debug.Log("Hit!");
-                StartCoroutine("blinkInBlue");
-                Destroy(collision);
-            }
-            // theTimingManager.CheckTiming();
+            note = collision.GetComponent<GameObject>();
         }
     }
 
     private void OnTriggerExit(Collider collision)
     {
-        // Debug.Log("Detatch : " + collision.tag);
+        Debug.Log("Detatch : " + collision.tag);
 
         if (collision.tag == "Ground")
             inAir = true;
@@ -161,10 +148,29 @@ public class Player : MonoBehaviour
 
     private void OnTriggerStay(Collider collision)
     {
+        //Ground Check
         if (collision.tag == "Ground" && (isJump||inAir))
         {
             isJump = false;
             inAir = false;
+            animator.SetBool("isJump", false);
+        }
+
+        //Note Check
+        if (collision.tag == "Enemy")
+        {
+            if ((-(collision.transform.position.x - transform.position.x) < 1.1f
+                && -(collision.transform.position.x - transform.position.x) >= 0.6f))
+            {
+                state = 1;
+            }
+            else if (-(collision.transform.position.x - transform.position.x) < 0.6f)
+            {
+                state = 0;
+                Debug.Log("Miss!");
+                StartCoroutine("blinkInRed");
+                Destroy(collision.gameObject);
+            }
         }
     }
 
