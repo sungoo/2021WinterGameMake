@@ -50,12 +50,12 @@ public class Player : MonoBehaviour
 
     public void Jump()
     {
-        if (isJump)
+        if (isJump || inAir)
             return;
 
         isJump = true;
 
-        rigid.velocity = Vector2.zero;
+        rigid.velocity = Vector3.zero;
 
         Vector3 jumpVelocity = new Vector3(0, jumpPower, 0);
         rigid.AddForce(jumpVelocity, ForceMode.Impulse);
@@ -118,16 +118,15 @@ public class Player : MonoBehaviour
 
         //Ground Check
         ////////////////////////////////////////////////////////
-        inAir = false;
-
         if (collision.tag == "Ground" && rigid.velocity.y < 0)
         {
+            inAir = false;
+
             if (inAir)
                 return;
             else
             {
                 isJump = false;
-                animator.SetBool("isJump", false);
             }
         }
         ////////////////////////////////////////////////////////
@@ -154,6 +153,7 @@ public class Player : MonoBehaviour
             isJump = false;
             inAir = false;
             animator.SetBool("isJump", false);
+            animator.SetTrigger("Ground");
         }
 
         //Note Check
