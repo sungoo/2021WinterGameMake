@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     Rigidbody rigid;
     SpriteRenderer renderer;
 
+    ScoreManager scoreManager;
+
     bool isJump = false;
     bool isSlide = false;
     bool overcharge = false;
@@ -27,6 +29,7 @@ public class Player : MonoBehaviour
         animator = gameObject.GetComponentInChildren<Animator>();
         rigid = gameObject.GetComponentInChildren<Rigidbody>();
         renderer = gameObject.GetComponentInChildren<SpriteRenderer>();
+        scoreManager = gameObject.GetComponent<ScoreManager>();
     }
 
     // Update is called once per frame
@@ -134,6 +137,7 @@ public class Player : MonoBehaviour
         if(collision.tag == "Enemy")
         {
             note = collision.GetComponent<GameObject>();
+            scoreManager.IncreaseScore(100);
         }
     }
 
