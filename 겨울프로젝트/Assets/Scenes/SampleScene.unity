@@ -2479,6 +2479,7 @@ MonoBehaviour:
   good: 0
   cool: 0
   perpect: 0
+  levelData: {fileID: 4900000, guid: e021058fb3be2054895d71c9116f795c, type: 3}
 --- !u!4 &775214767
 Transform:
   m_ObjectHideFlags: 0

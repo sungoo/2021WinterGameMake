@@ -2,7 +2,8 @@
 AudioFileName=DebussyReverieL.68.mp3
 AudioViewTime=10000
 BPM=92
-Beat=4/4
+MusicTempo=4
+StdTempo=4
 Bit=32
 
 [ContentInfo]
@@ -13,10 +14,10 @@ Sheet=TestName
 Difficulty=1
 
 [NoteInfo]
-1, 1, 10, 0
-1, 2, 20, 0
-1, 1, 50, 0
-1, 1, 55, 0
-1, 2, 100, 0
-1, 1, 150, 10
-1, 2, 300, 0
+0=1=1=10=0
+0=1=2=20=0
+0=1=1=50=0
+0=1=1=55=0
+0=1=2=100=0
+0=1=1=150=10
+0=1=2=300=0

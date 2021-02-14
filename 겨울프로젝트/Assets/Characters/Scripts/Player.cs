@@ -86,13 +86,13 @@ public class Player : MonoBehaviour
 
         if(state == 1)
         {
-            Debug.Log("Hit!");
+            //Debug.Log("Hit!");
             StartCoroutine("blinkInBlue");
             Destroy(note.gameObject);
         }
         if(state == 0)
         {
-            Debug.Log("Miss!");
+            //Debug.Log("Miss!");
             StartCoroutine("blinkInRed");
         }
     }
@@ -112,7 +112,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Attatch : " + collision.gameObject.tag);
+        //Debug.Log("Attatch : " + collision.gameObject.tag);
 
         //Ground Check
         ////////////////////////////////////////////////////////
@@ -138,7 +138,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("Detatch : " + collision.tag);
+        //Debug.Log("Detatch : " + collision.tag);
 
         if (collision.tag == "Ground")
             inAir = true;

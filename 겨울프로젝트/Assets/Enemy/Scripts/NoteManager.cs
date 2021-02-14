@@ -25,16 +25,11 @@ public class NoteManager : MonoBehaviour
         }
     }
 
-    void ParseSheet()
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Note"))
         {
-            Debug.Log("충돌충돌");
+            //Debug.Log("충돌충돌");
             Destroy(other.gameObject);
         }
     }
