@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NoteMovement : MonoBehaviour
 {
+    ScoreManager scoreManager;
     public float noteSpeed = 10;
 
     // public TimingManager theTimingManager = null;
@@ -11,6 +12,7 @@ public class NoteMovement : MonoBehaviour
     private void Start()
     {
         // theTimingManager = FindObjectOfType<TimingManager>();
+        scoreManager = FindObjectOfType<ScoreManager>();
     }
 
     private void Update()
@@ -22,6 +24,7 @@ public class NoteMovement : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
+            scoreManager.currentScore += 100;
             Destroy(gameObject);
         }
 
