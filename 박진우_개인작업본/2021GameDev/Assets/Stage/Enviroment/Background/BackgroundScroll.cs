@@ -4,20 +4,35 @@ using UnityEngine;
 
 public class BackgroundScroll : MonoBehaviour
 {
-    // 배경화면 무한 스크롤링 코드
-    private MeshRenderer render;
-    public float speed;
-    private float offset;
-    // Start is called before the first frame update
-    void Start()
-    {
-        render = GetComponent<MeshRenderer>();
-    }
+   public float speed;
+   public int startIndex;
+   public int endIndex;
+   public Transform[] backgrounds;
 
-    // Update is called once per frame
-    void Update()
-    {
-        offset += Time.deltaTime * speed;      
-        render.material.mainTextureOffset = new Vector2(offset, 0);
-    }
+   float viewHeight;
+
+   private void Awake()
+   {
+       viewHeight = Camera.main.orthographicSize * 2;
+   }
+
+   private void Update()
+   {
+       Vector3 currentPos = transform.position;
+       Vector3 nextPos = Vector3.left * speed * Time.deltaTime;
+       transform.position = currentPos + nextPos;
+        //Debug.Log(endIndex);
+
+       for(int i = 0; i < backgrounds.Length; ++i)
+       {
+            if(backgrounds[endIndex].position.y < 10)
+            {
+                Vector3 startBackgroundPos = backgrounds[startIndex].localPosition;
+                Vector3 endBackgroundPos = backgrounds[endIndex].localPosition;
+                backgrounds[endIndex].transform.localPosition = startBackgroundPos + Vector3.left * 10;
+            }
+       }
+
+       
+   }
 }

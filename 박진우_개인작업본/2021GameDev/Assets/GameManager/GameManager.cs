@@ -1,19 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
     private GameObject player;
-    public GameObject camera;
+    private GameObject camera;
     private GameObject noteSpawner;
     private GameObject noteCollecter;
 
-    TimingManager theTimingManager;
+    //박자 계산
+    public float musicBPM = 60f;
+    public float stdBPM = 60f;
+    public int musicTempo = 4;
+    public int stdTempo = 4;
 
-    public int BPM = 100;
+    private float tikTime = 0;
+    private float nextTime = 0;
+
     public float floorSpeed = 1;
 
     public int score = 0;
@@ -43,7 +50,6 @@ public class GameManager : MonoBehaviour
         }
 
         var manager = FindObjectsOfType<GameManager>();
-        
         if(manager.Length == 1)
         {
             DontDestroyOnLoad(gameObject);
@@ -62,8 +68,6 @@ public class GameManager : MonoBehaviour
         noteSpawner = GameObject.FindWithTag("Spawner");
         noteCollecter = GameObject.FindWithTag("Collector");
 
-        theTimingManager = GetComponent<TimingManager>();
-
         Invoke("gameStart", 3f);
     }
 
@@ -75,6 +79,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         Move();
+        Metronome();
     }
 
     private void Move()
@@ -83,5 +88,24 @@ public class GameManager : MonoBehaviour
         camera.transform.Translate(Vector3.right * floorSpeed * Time.deltaTime);
         noteSpawner.transform.Translate(Vector3.right * floorSpeed * Time.deltaTime);
         noteCollecter.transform.Translate(Vector3.right * floorSpeed * Time.deltaTime);
+    }
+
+    private void Metronome()
+    {
+        tikTime = (stdBPM / musicBPM) * (musicTempo / stdTempo);
+
+        nextTime += Time.deltaTime;
+
+        if (nextTime > tikTime)
+        {
+            StartCoroutine(PlayTik(tikTime));
+            nextTime = 0;
+        }
+    }
+
+    IEnumerator PlayTik(float tikTime)
+    {
+        Debug.Log(nextTime);//오차 확인
+        yield return new WaitForSeconds(tikTime);//tikTime 만큼 대기
     }
 }

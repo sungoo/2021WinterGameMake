@@ -18,6 +18,9 @@ public class Player : MonoBehaviour
     bool isDischarge = false;
     bool inAir = false;
 
+    GameObject note;
+    int state = 0; //0 : miss, 1 : bad, 2 : good, 3 : cool, 4 : perpect
+
     // Start is called before the first frame update
     void Start()
     {
@@ -57,7 +60,7 @@ public class Player : MonoBehaviour
         Vector2 jumpVelocity = new Vector2(0, jumpPower);
         rigid.AddForce(jumpVelocity, ForceMode2D.Impulse);
 
-        //animator.SetBool("Jump", true);
+        animator.SetBool("isJump", true);
     }
 
     public void Slide()
@@ -80,6 +83,18 @@ public class Player : MonoBehaviour
     public void SlideClick()
     {
         isSlide = true;
+
+        if(state == 1)
+        {
+            //Debug.Log("Hit!");
+            StartCoroutine("blinkInBlue");
+            Destroy(note.gameObject);
+        }
+        if(state == 0)
+        {
+            //Debug.Log("Miss!");
+            StartCoroutine("blinkInRed");
+        }
     }
     //롱 노트
     public void SlideDown()
@@ -97,7 +112,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Attatch : " + collision.gameObject.tag);
+        //Debug.Log("Attatch : " + collision.gameObject.tag);
 
         //Ground Check
         ////////////////////////////////////////////////////////
@@ -110,33 +125,20 @@ public class Player : MonoBehaviour
             else
             {
                 isJump = false;
-                //animator.SetBool("Jump", false);
+                animator.SetBool("isJump", false);
             }
         }
         ////////////////////////////////////////////////////////
-        
-        //Note Check
+        ///
         if(collision.tag == "Enemy")
         {
-            if(Vector3.Distance(collision.transform.position, transform.position) < 0.3f)
-            {
-                Debug.Log("Miss!");
-                StartCoroutine("blinkInRed");
-                Destroy(collision);
-            }
-            else if(isSlide && (Vector3.Distance(collision.transform.position, transform.position) < 0.5f 
-                && Vector3.Distance(collision.transform.position, transform.position) > 0.3f))
-            {
-                Debug.Log("Hit!");
-                StartCoroutine("blinkInBlue");
-                Destroy(collision);
-            }
+            note = collision.GetComponent<GameObject>();
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("Detatch : " + collision.tag);
+        //Debug.Log("Detatch : " + collision.tag);
 
         if (collision.tag == "Ground")
             inAir = true;
@@ -144,10 +146,29 @@ public class Player : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        //Ground Check
         if (collision.tag == "Ground" && (isJump||inAir))
         {
             isJump = false;
             inAir = false;
+            animator.SetBool("isJump", false);
+        }
+
+        //Note Check
+        if (collision.tag == "Enemy")
+        {
+            if ((-(collision.transform.position.x - transform.position.x) < 1.1f
+                && -(collision.transform.position.x - transform.position.x) >= 0.6f))
+            {
+                state = 1;
+            }
+            else if (-(collision.transform.position.x - transform.position.x) < 0.6f)
+            {
+                state = 0;
+                Debug.Log("Miss!");
+                StartCoroutine("blinkInRed");
+                Destroy(collision.gameObject);
+            }
         }
     }
 
