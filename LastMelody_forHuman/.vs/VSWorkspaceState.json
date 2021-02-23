@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Assets",
+    "\\Assets\\GameManager",
+    "\\Assets\\Stage",
+    "\\Assets\\Stage\\Enviroment",
+    "\\Assets\\Stage\\Enviroment\\Background"
+  ],
+  "SelectedNode": "\\Assets\\Stage\\Enviroment\\Background\\BackgroundScroll.cs",
+  "PreviewInSolutionExplorer": false
+}
