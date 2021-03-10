@@ -1,0 +1,6 @@
+배경 내 할당되어야 하는 메테리얼을 분류해놨습니다!
+
+-모델링inspector에-model-rig-animation-materials 4개의 탭중 materials탭에서 
+이름에 맞는 메테리얼 적용하시면 한번에 적용 가능해요!
+
+-inspector의 rig탭중 애니메이션 타입은 꼭legacy로...!
